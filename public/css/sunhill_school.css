@@ -1,0 +1,230 @@
+/*!
+     * Sunhill School.
+ */
+
+.tile {
+    display: block;
+}
+
+.tile:hover {
+    background-color: rgba(94, 92, 96, 0.8) !important;
+}
+
+.tile:hover > a {
+    color: white;
+}
+
+.card{
+    height: auto;
+    background: transparent;
+    color: white;
+    height: auto;
+}
+
+.card .header{
+    border-radius: 2px;
+    /*background-image: linear-gradient(to left, dodgerblue, skyblue);*/
+}
+
+.card .content{
+    padding: 5%;
+    padding-top: 0em;
+    height: calc(100% - 20px);
+}
+
+.card .content p{
+    height: auto;
+    overflow: hidden;
+    padding: 10px;
+}
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.thumbnail > img,
+.thumbnail a > img {
+    margin-right: auto;
+    margin-left: auto;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+    border-color: #337ab7;
+}
+.thumbnail .caption {
+    padding: 9px;
+    color: #333;
+}
+
+.slide_1 {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(120deg);
+    }
+    35% {
+        opacity: 0.5;
+        -webkit-transform: rotateZ(120deg);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+.slide_2 {
+    animation-name: slide_2;
+    -webkit-animation-name: slide_2;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide_2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(90deg);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: rotateX(180deg);
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+@-webkit-keyframes slide_2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotateX(90deg);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: rotateX(180deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.vertical_slide {
+    animation-name: vertical_slide;
+    -webkit-animation-name: vertical_slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes vertical_slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes vertical_slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+.horizontal_slide {
+    animation-name: horizontal_slide;
+    -webkit-animation-name: horizontal_slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes horizontal_slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+@-webkit-keyframes horizontal_slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../bootstrap/font/kidsn.ttf);
+}
+
+
+.slide_3 {
+    animation-name: slide_3;
+    -webkit-animation-name: slide_3;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide_3 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide_3 {
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+.latest_events {
+    background-color: turquoise;
+    color: white;
+}
